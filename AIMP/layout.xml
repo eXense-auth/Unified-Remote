@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#535362">
+
+			<row weight="wrap">
+				<button image="icon.png" scale="fit" onTap="run" />
+				<button id="shf" icon="shuffle" ontap="shuffle" />
+				<button id="mut" icon="vmute" ontap="mute" />
+				<button id="rep" icon="repeat" ontap="repeat" />
+				<button icon="power" ontap="close" />
+			</row>
+			<row weight="wrap">
+				<button icon="left" onTap="prev_vis" weight="wrap" />
+				<button text="Visualisations" textAlign="center" ontap="visualisation" />
+				<button icon="right" onTap="next_vis" weight="wrap" />
+			</row>
+			<row weight="2">
+				<label id="info" text="[Not Playing]" textAlign="center" onTap="play_pause"  darkcolor="#111111" lightcolor="#313140"/>/>
+			</row>
+			<row weight="wrap">
+				<button icon="vdown" ontap="volume_down" weight="wrap" />
+				<slider id="volslider" text="Volume" progressmax="100" progress="0" onchange="volume" dark="color:#ffffff;focus:#ffffff;active:#333333" light="color:#ffffff;focus:#ffffff;active:#ff9326"/>
+				<button icon="vup" ontap="volume_up" weight="wrap" />
+			</row>
+			<row weight="wrap">
+				<button icon="rwd" ontap="small_back" weight="wrap" />
+				<slider id="seekbar" text="Seek" progressmax="100" progress="0" onchange="progress" dark="color:#ffffff;focus:#ffffff;active:#333333" light="color:#ffffff;focus:#ffffff;active:#ff9326"/>
+				<button icon="ff" ontap="small_forward" weight="wrap" />
+			</row>
+			<row>
+				<button icon="previous" onTap="previous" weight="wrap" />
+				<button icon="stop" onTap="stop" />
+				<button id="p" icon="playpause" onTap="play_pause"/>
+				<button icon="next" onTap="next" weight="wrap" />
+			</row>
+</layout>
