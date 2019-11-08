@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" color="#222222">
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#00b386">
 
 	<row>
 		<button icon="vmute" onTap="mute" />
@@ -18,10 +18,10 @@
 	</row>
 	<row weight="wrap">
 		<button icon="rwd" onTap="slower" />
-		<button text="-/2" onTap="rewind_half" />
-		<button text="-x2" onTap="rewind_double" />
-		<button text="+/2" onTap="fast_forward_double" />
-		<button text="+x2" onTap="fast_forward_half" />
+		<button text="‹" onTap="rewind_half" />
+		<button text="«" onTap="rewind_double" />
+		<button text="»" onTap="fast_forward_double" />
+		<button text="›" onTap="fast_forward_half" />
 		<button icon="ff" onTap="faster" />
 	</row>
 	<row>
