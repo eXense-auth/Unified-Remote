@@ -1,4 +1,6 @@
-meta.name: VLC Keys
+meta.id: eXense.VLC
+meta.name: VLC
 meta.author: eXense
 meta.description: Basic VLC remote.
+meta.platform: windows
 meta.tags.category: media
