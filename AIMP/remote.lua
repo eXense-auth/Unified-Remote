@@ -2,17 +2,20 @@
 local timer = libs.timer
 local utf8 = libs.utf8;
 local server = libs.server;
-local kb = require("keyboard");
+local keyboard = libs.keyboard;
+local path = settings.path;
 
---@help Run AIMP
-actions.run = function ()
-	os.start("AIMP.exe");
-	os.start("%programfiles(x86)%\\AIMP\\AIMP.exe");
-	os.start("%programfiles%\\AIMP\\AIMP.exe");
-	os.start("AIMPPortable.exe");
-	os.start("D:\\PortableApps\\AIMPPortable\\AIMPPortable.exe");
-	os.start("E:\\PortableApps\\AIMPPortable\\AIMPPortable.exe");
-	os.start("F:\\PortableApps\\AIMPPortable\\AIMPPortable.exe");
+actions.run = function()
+	server.update({ type = "message", text = "Opening..." });
+	pcall(function ()
+		os.start("%programfiles(x86)%\\AIMP\\AIMP.exe");
+		end);
+	pcall(function ()
+		os.start("%programfiles%\\AIMP\\AIMP.exe");
+		end);
+	pcall(function ()
+	os.start(path);
+		end);
 end
 
 events.detect = function ()
@@ -426,8 +429,7 @@ actions.small_forward = function ()
 end
 
 
-
-
+--@help Visualisations controls
 actions.next_vis = function()
 	win.send(AIMPhwnd, WM_AIMP_COMMAND, 19, 0);
 end
@@ -443,8 +445,6 @@ end
 actions.stop_vis = function()
 	win.send(AIMPhwnd, WM_AIMP_COMMAND, 31, 0);
 end
-
-
 
 
 --@help Close AIMP
