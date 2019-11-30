@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#00b386">
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#0078d7" >
 
-	<row>
+	<row weight="wrap" darkcolor="#111111" lightcolor="#ffffff" light="color:#333333;focus:#333333;active:#333333" >
+		<button image="icon.png" scale="fit" text="FS" onTap="launch" onhold="num" color="#0078d7" />
+        <space />
+        <space />
+        <space />
 		<button icon="vmute" onTap="mute" />
-		<button icon="up" onTap="volume_up" />
+		<button icon="power" ontap="kill" />
+	</row>
+	<row>
 		<button icon="list" onTap="list" />
+		<button icon="up" onTap="volume_up" />
+		<button text="tab" onTap="tab" />
 	</row>
 	<row>
 		<button icon="left" onTap="rewind" />
@@ -15,6 +23,19 @@
 		<button icon="back" onTap="back" />
 		<button icon="down" onTap="volume_down" />
 		<button icon="fullscreen" onTap="fullscreen" />
+	</row>
+	<row weight="wrap" darkcolor="#111111" lightcolor="#ffffff" light="color:#333333;focus:#333333;active:#333333" >
+		<button text="‹" onTap="start" />
+		<button text=" " onTap="s1" />
+		<button text=" " onTap="s2" />
+		<button text=" " onTap="s3" />
+		<button text=" " onTap="s4" />
+		<button text="%" onTap="s5" />
+		<button text=" " onTap="s6" />
+		<button text=" " onTap="s7" />
+		<button text=" " onTap="s8" />
+		<button text=" " onTap="s9" />
+		<button text="›" onTap="end" />
 	</row>
 	<row weight="wrap">
 		<button icon="rwd" onTap="slower" />
