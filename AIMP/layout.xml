@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#535362">
+<layout onLaunch="launch" onpause="pause" onresume="play" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#535362">
 
 			<row weight="wrap">
-				<button image="icon.png" scale="fit" onTap="run" />
+				<button image="icon.png" scale="fit" onTap="launch" />
 				<button id="shf" icon="shuffle" ontap="shuffle" />
 				<button id="mut" icon="vmute" ontap="mute" />
 				<button id="rep" icon="repeat" ontap="repeat" />
@@ -22,9 +22,9 @@
 				<button icon="vup" ontap="volume_up" weight="wrap" />
 			</row>
 			<row weight="wrap">
-				<button icon="rwd" ontap="small_back" weight="wrap" />
-				<slider id="seekbar" text="Seek" progressmax="100" progress="0" onchange="progress" dark="color:#ffffff;focus:#ffffff;active:#333333" light="color:#ffffff;focus:#ffffff;active:#ff9326"/>
-				<button icon="ff" ontap="small_forward" weight="wrap" />
+				<button icon="rwd" ontap="rewind" weight="wrap" />
+				<slider id="progressslider" text="Progress" progressmax="100" progress="0" onchange="progress" dark="color:#ffffff;focus:#ffffff;active:#333333" light="color:#ffffff;focus:#ffffff;active:#ff9326"/>
+				<button icon="ff" ontap="forward" weight="wrap" />
 			</row>
 			<row>
 				<button icon="previous" onTap="previous" weight="wrap" />
