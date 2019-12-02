@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="increasevolume" onVolumeDown="decreasevolume" onpause="pause" onresume="play" darkcolor="#222222" lightcolor="#324b6c" >
+
+	<row weight="wrap" darkcolor="#111111" lightcolor="#ffffff" light="color:#333333;focus:#333333;active:#333333" >
+		<button image="icon.png" scale="fit" onTap="launch" />
+		<button icon="home" onTap="main" />
+		<button icon="docright" onTap="musicplayer" />
+		<button icon="flash" onTap="news" />
+		<button icon="power" onTap="close" onHold="kill" />
+	</row>
+	<row weight="wrap" >
+		<button icon="vdown" onTap="decreasevolume" />
+		<button icon="repeat" onTap="toggleplayingrepeatstatus" />
+		<button icon="vmute" onTap="togglemute" />
+		<button icon="shuffle" onTap="toggleplayingshuffled" />
+		<button icon="vup" onTap="increasevolume" />
+	</row>
+	<row>
+		<button icon="previous" onTap="playprevious" />
+		<button icon="playpause" onTap="toggleplaypause" />
+		<button icon="next" onTap="playnext" />
+	</row>
+	<row weight="3" darkcolor="#111111" lightcolor="#ffffff" light="color:#333333;focus:#333333;active:#333333" >
+      	<dpad icon="select" onTap="enter" >
+        	<item onTap="up" />
+        	<item onTap="right" />
+        	<item onTap="down" />
+        	<item onTap="left" />
+      	</dpad>
+    </row>
+	<row>
+		<button text="back" onTap="back" />
+		<button text="tab" onTap="tab" />
+		<button text="esc" onTap="esc" />
+	</row>
+</layout>
