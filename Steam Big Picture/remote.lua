@@ -1,4 +1,7 @@
-﻿local win = libs.win;
+﻿
+-- https://developer.valvesoftware.com/wiki/Steam_browser_protocol
+
+local win = libs.win;
 local kb = libs.keyboard;
 local server = libs.server;
 
