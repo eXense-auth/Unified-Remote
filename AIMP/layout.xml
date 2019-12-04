@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <layout onLaunch="launch" onpause="pause" onresume="play" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#535362">
-
 			<row weight="wrap">
 				<button image="icon.png" scale="fit" onTap="launch" />
 				<button id="shf" icon="shuffle" ontap="shuffle" />
@@ -13,8 +12,8 @@
 				<button text="Visualisations" textAlign="center" ontap="visualisation" />
 				<button icon="right" onTap="next_vis" weight="wrap" />
 			</row>
-			<row weight="2">
-				<label id="info" text="[Not Playing]" textAlign="center" onTap="play_pause"  darkcolor="#111111" lightcolor="#313140"/>/>
+			<row weight="3">
+				<label id="info" text="[Not Playing]" textAlign="center" onTap="play_pause" darkcolor="#111111" lightcolor="#313140" />
 			</row>
 			<row weight="wrap">
 				<button icon="vdown" ontap="volume_down" weight="wrap" />
@@ -26,10 +25,10 @@
 				<slider id="progressslider" text="Progress" progressmax="100" progress="0" onchange="progress" dark="color:#ffffff;focus:#ffffff;active:#333333" light="color:#ffffff;focus:#ffffff;active:#ff9326"/>
 				<button icon="ff" ontap="forward" weight="wrap" />
 			</row>
-			<row>
+			<row weight="1">
 				<button icon="previous" onTap="previous" weight="wrap" />
 				<button icon="stop" onTap="stop" />
-				<button id="p" icon="playpause" onTap="play_pause"/>
+				<button id="playpause" icon="playpause" onTap="play_pause"/>
 				<button icon="next" onTap="next" weight="wrap" />
 			</row>
 </layout>
