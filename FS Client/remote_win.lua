@@ -116,7 +116,8 @@ end
 
 --@help Toggle play/pause
 actions.play_pause = function()
-	kb.stroke("space");
+--	kb.stroke("space");
+	kb.stroke("k");
 end
 
 --@help Slower
