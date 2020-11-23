@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <layout onLaunch="launch" onpause="pause" onresume="play" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#535362">
+	<tabs>
+		<tab text="Playing">
 			<row weight="wrap">
 				<button image="icon.png" scale="fit" onTap="launch" />
 				<button id="shf" icon="shuffle" ontap="shuffle" />
@@ -31,4 +33,20 @@
 				<button id="playpause" icon="playpause" onTap="play_pause"/>
 				<button icon="next" onTap="next" weight="wrap" />
 			</row>
+		</tab>
+		<tab text="File browser">
+			<grid>
+				<row weight="wrap">
+					<button icon="back" onTap="back" />
+					<button icon="more" onTap="goto" />
+					<button icon="arrowup" onTap="up" />
+					<button icon="home" onTap="home" />
+					<button icon="refresh" onTap="refresh" />
+				</row>
+				<row>
+					<list id="list" onTap="item" onHold="hold" />
+				</row>
+			</grid>
+		</tab>
+	</tabs>
 </layout>
