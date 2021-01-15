@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volumeup" onVolumeDown="volumedown" lightcolor="#ffffff" darkcolor="#222222">
+<tabs>
+	<tab text="CTRL">
+		<grid>
+			<row>
+				<button icon="docnew" onTap="cf1" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="up" onTap="cf2" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="docclose" onTap="cf3" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="left" onTap="cf4" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="select" onTap="cf5" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="right" onTap="cf6" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="docleft" onTap="cf7" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="down" onTap="cf8" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="docright" onTap="cf9" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="left" onTap="cf10" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="favorite" onTap="cf11" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="right" onTap="cf12" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+		</grid>
+	</tab>
+	<tab text="ALT">
+		<grid>
+			<row>
+				<button icon="docnew" onTap="af1" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="up" onTap="af2" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="docclose" onTap="af3" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="left" onTap="af4" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="select" onTap="af5" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="right" onTap="af6" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="docleft" onTap="af7" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="down" onTap="af8" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="docright" onTap="af9" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="left" onTap="af10" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="favorite" onTap="af11" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="right" onTap="af12" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+		</grid>
+	</tab>
+	<tab text="SHIFT">
+		<grid>
+			<row>
+				<button icon="docnew" onTap="sf1" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="up" onTap="sf2" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="docclose" onTap="sf3" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="left" onTap="sf4" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="select" onTap="sf5" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="right" onTap="sf6" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="docleft" onTap="sf7" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="down" onTap="sf8" dark="focus:#d96c00" light="color:#111111;focus:#ffb973" />
+				<button icon="docright" onTap="sf9" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+			<row>
+				<button icon="left" onTap="sf10" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="favorite" onTap="sf11" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+				<button icon="right" onTap="sf12" dark="color:#aaaaaa;focus:#d96c00" light="color:#666666;focus:#ffb973" />
+			</row>
+		</grid>
+	</tab>
+</tabs>
+</layout>
