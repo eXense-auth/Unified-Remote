@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onlaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" onResume="resume" onPause="pause" lightcolor="#ff8000" darkcolor="#222222">
+	<tabs>
+		<tab text="Playing">
+			<row weight="wrap">
+			<!--<button image="icon.png" scale="fit" onTap="launch" onhold="kill" />-->
+				<button icon="repeat" ontap="loop_repeat" />
+				<button icon="left" onTap="rate_down" onhold="audiodelay_down" />
+			<!--<button icon="select" onTap="normal_rate" onhold="normal_audiodelay" />-->
+				<button text="rate" onTap="normal_rate" onhold="normal_audiodelay" />
+				<button icon="right" onTap="rate_up" onhold="audiodelay_up" />
+				<button icon="shuffle" ontap="shuffle" />
+			<!--<button icon="fullscreen" ontap="fullscreen" />-->
+			</row>
+			<row weight="3">
+				<image id="art" ontap="fullscreen" lightcolor="#ffffff" darkcolor="#000000" />
+			</row>
+			<row weight="wrap">
+				<label id="title" ontap="fullscreen" text="Connecting..." lightcolor="#ffffff" darkcolor="#000000" />
+			</row>
+			<row weight="wrap">
+				<button icon="vdown" ontap="volume_down" onhold="volume_mute" weight="wrap" />
+				<slider id="vol" text="Volume" onchange="volume_change" dark="color:#ffffff;focus:#ffffff;active:#333333" light="color:#ffffff;focus:#ffffff;active:#ff9326" />
+				<button icon="vup" ontap="volume_up" weight="wrap" />
+			</row>
+			<row weight="wrap">
+				<button icon="rwd" ontap="jump_back" weight="wrap" />
+				<slider id="pos" text="Position" onchange="position_change" onup="position_stop" dark="color:#ffffff;focus:#ffffff;active:#333333" light="color:#ffffff;focus:#ffffff;active:#ff9326" />
+				<button icon="ff" ontap="jump_forward" weight="wrap" />
+			</row>
+			<row weight="1">
+				<button icon="previous" ontap="previous" weight="wrap" />
+				<button icon="stop" ontap="stop" />
+				<button id="play" icon="playpause" ontap="play_pause" onhold="stop" />
+				<button icon="next" ontap="next" weight="wrap" />
+			</row>
+		</tab>
+		<tab text="Library">
+			<row weight="wrap">
+				<button icon="back" ontap="library_back" />
+				<button icon="refresh" ontap="library_refresh" />
+			</row>
+			<row>
+				<list id="list" ontap="library_select">
+					<item text="Loading..." />
+				</list>
+			</row>
+			<row weight="wrap">
+				<text id="mrl" hint="Paste URL here..." onchange="mrl_upd" />
+				<button weight="wrap" icon="play" ontap="play_mrl" />
+			</row>
+		</tab>
+	</tabs>
+</layout>
