@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" darkcolor="#222222" lightcolor="#ff2626" >
+  <grid>
+    <row>
+      <button icon="rwd" onTap="slower" />
+      <button icon="up" onTap="volume_up" />
+      <button icon="ff" onTap="faster" />
+    </row>
+    <row>
+      <button icon="left" onTap="rewind" onHold="rewind_j" />
+      <button icon="select" onTap="play_pause" onHold="play_pause_k" />
+      <button icon="right" onTap="fast_forward" onHold="fast_forward_l" />
+    </row>
+    <row>
+      <button icon="previous" onTap="previous" />
+      <button icon="down" onTap="volume_down" onHold="mute" />
+      <button icon="next" onTap="next" />
+    </row>
+	<row weight="wrap" darkcolor="#111111" lightcolor="#ffffff" light="color:#333333;focus:#333333;active:#333333" >
+		<button text="‹" onTap="s0" />
+		<button text=" " onTap="s1" />
+		<button text=" " onTap="s2" />
+		<button text=" " onTap="s3" />
+		<button text=" " onTap="s4" />
+		<button text="%" onTap="s5" />
+		<button text=" " onTap="s6" />
+		<button text=" " onTap="s7" />
+		<button text=" " onTap="s8" />
+		<button text=" " onTap="s9" />
+		<button text="›" onTap="end" />
+	</row>
+    <row>
+		<button icon="list" onTap="sub" />
+		<button icon="window" onTap="pip" />
+		<button icon="fullscreen" onTap="fullscreen" onHold="widescreen" />
+    </row>
+  </grid>
+</layout>
