@@ -29,6 +29,11 @@ actions.volume_up = function()
 	keyboard.stroke("up");
 end
 
+--@help Mute volume
+actions.mute = function()
+	keyboard.stroke("M");
+end
+
 --@help Rewind
 actions.rewind = function()
 	keyboard.stroke("J");
@@ -49,6 +54,11 @@ actions.next = function()
 	keyboard.stroke("shift", "n");
 end
 
+--@help Toggle widescreen
+actions.widescreen = function()
+	keyboard.stroke("T");
+end
+
 --@help Toggle fullscreen
 actions.fullscreen = function()
 	keyboard.stroke("F");
@@ -59,10 +69,24 @@ actions.exit_fullscreen = function()
 	keyboard.stroke("esc");
 end
 
+--@help miniplayer
+actions.miniplayer = function()
+	keyboard.stroke("I");
+end
+
 --@help Toggle play/pause
 actions.play_pause = function()
+	keyboard.stroke("space");
+end
+
+--@help Toggle play/pause
+actions.play_pause_K = function()
 	keyboard.stroke("K");
-	
+end
+
+--@help Subtitles
+actions.sub = function()
+	keyboard.stroke("C");
 end
 
 --@help Slower
@@ -73,4 +97,53 @@ end
 --@help Faster
 actions.faster = function()
 	keyboard.stroke("shift", "oem_period");
+end
+
+--@help Step
+actions.s0 = function()
+	keyboard.stroke("0");
+end
+
+actions.s1 = function()
+	keyboard.stroke("1");
+end
+
+actions.s2 = function()
+	keyboard.stroke("2");
+end
+
+actions.s3 = function()
+	keyboard.stroke("3");
+end
+
+actions.s4 = function()
+	keyboard.stroke("4");
+end
+
+actions.s5 = function()
+	keyboard.stroke("5");
+end
+
+actions.s6 = function()
+	keyboard.stroke("6");
+end
+
+actions.s7 = function()
+	keyboard.stroke("7");
+end
+
+actions.s8 = function()
+	keyboard.stroke("8");
+end
+
+actions.s9 = function()
+	keyboard.stroke("9");
+end
+
+actions.start = function()
+	keyboard.stroke("home");
+end
+
+actions["end"] = function()
+	keyboard.stroke("end");
 end
