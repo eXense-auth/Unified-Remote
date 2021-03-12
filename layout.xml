@@ -3,7 +3,7 @@
   <grid>
     <row>
       <button icon="rwd" onTap="slower" />
-      <button icon="up" onTap="volume_up" />
+      <button icon="up" onTap="volume_up" onHold="mute" />
       <button icon="ff" onTap="faster" />
     </row>
     <row>
