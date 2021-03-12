@@ -36,11 +36,19 @@ end
 
 --@help Rewind
 actions.rewind = function()
+	keyboard.stroke("left");
+end
+
+actions.rewind_j = function()
 	keyboard.stroke("J");
 end
 
 --@help Fast forward
 actions.fast_forward = function()
+	keyboard.stroke("right");
+end
+
+actions.fast_forward_l = function()
 	keyboard.stroke("L");
 end
 
@@ -79,8 +87,7 @@ actions.play_pause = function()
 	keyboard.stroke("space");
 end
 
---@help Toggle play/pause
-actions.play_pause_K = function()
+actions.play_pause_k = function()
 	keyboard.stroke("K");
 end
 

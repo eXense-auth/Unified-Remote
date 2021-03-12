@@ -7,9 +7,9 @@
       <button icon="ff" onTap="faster" />
     </row>
     <row>
-      <button icon="left" onTap="rewind" />
-      <button icon="select" onTap="play_pause" onHold="play_pause_K" />
-      <button icon="right" onTap="fast_forward" />
+      <button icon="left" onTap="rewind" onHold="rewind_j" />
+      <button icon="select" onTap="play_pause" onHold="play_pause_k" />
+      <button icon="right" onTap="fast_forward" onHold="fast_forward_l" />
     </row>
     <row>
       <button icon="previous" onTap="previous" />
@@ -31,8 +31,8 @@
 	</row>
     <row>
 		<button icon="list" onTap="sub" />
-		<button icon="zoomout" onTap="pip" />
-		<button icon="window" onTap="fullscreen" onHold="widescreen" />
+		<button icon="window" onTap="pip" />
+		<button icon="fullscreen" onTap="fullscreen" onHold="widescreen" />
     </row>
   </grid>
 </layout>
