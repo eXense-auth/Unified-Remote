@@ -1,0 +1,4 @@
+host: localhost
+password: vlcremote
+port: 8080
+exepath: D:\\PortableApps\\VLCPortable\\VLCPortable.exe
