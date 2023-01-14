@@ -1,21 +1,21 @@
 
-keyboard = libs.keyboard;
+kb = libs.keyboard;
 
 --@help 
 
 --@help Lower system volume
 actions.volume_down = function()
-	keyboard.press("volumedown");
+	kb.press("volumedown");
 end
 
 --@help Mute system volume
 actions.volume_mute = function()
-	keyboard.press("volumemute");
+	kb.press("volumemute");
 end
 
 --@help Raise system volume
 actions.volume_up = function()
-	keyboard.press("volumeup");
+	kb.press("volumeup");
 end
 
 --
